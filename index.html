@@ -12,165 +12,206 @@
 		/>
 		<link rel="stylesheet" href="./css/styles.css" />
 		<title>Barbershop</title>
+		<link
+			rel="stylesheet"
+			href="node_modules/modern-normalize/modern-normalize.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body>
 		<header class="header">
-			<a href=""><img src="./images/logo.svg" alt="Logo of site" class="logo" /></a>
-			<nav class="navigation">
-				<ul class="navigation-list">
-					<li class="navigation-item"><a href="" class="navigation-link">About</a></li>
-					<li class="navigation-item"><a href="" class="navigation-link">Services and prices</a></li>
-					<li class="navigation-item"><a href="" class="navigation-link">Masters</a></li>
-					<li class="navigation-item"><a href="" class="navigation-link">Contacts</a></li>
-				</ul>
-			</nav>
-			<a href="tel:+380441111111" class="contact-link">+38 044 111 11 11</a>
-			<button type="button" class="register-button">register online</button>
+			<div class="container">
+				<a href=""><img src="./images/logo.svg" alt="Logo of site" class="logo" /></a>
+				<nav class="navigation">
+					<ul class="navigation-list">
+						<li class="navigation-item"><a href="" class="navigation-link">About</a></li>
+						<li class="navigation-item"><a href="" class="navigation-link">Services and prices</a></li>
+						<li class="navigation-item"><a href="" class="navigation-link">Masters</a></li>
+						<li class="navigation-item"><a href="" class="navigation-link">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="header-conect">
+				<a href="tel:+380441111111" class="contact-link">+38 044 111 11 11</a>
+				<button type="button" class="register-button">register online</button>
+				</div>
+			</div>
 		</header>
 		<main>
 			<section class="hero">
-				<ul class="hero-list">
-					<li class="hero-item">
-						<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero-link">Instagram</a>
-					</li>
-					<li class="hero-item">
-						<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero-link">Youtube</a>
-					</li>
-				</ul>
-				<p class="hero-text">A hair salon for men in Kyiv</p>
-				<h1 class="hero-title">BarberShop</h1>
-				<p class="hero-content">We are experts in trendy men's haircuts. We work quickly, carefully and tastefully</p>
+				<div class="container">
+					<ul class="hero-list">
+						<li class="hero-item">
+							<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero-link">Instagram</a>
+						</li>
+						<li class="hero-item">
+							<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero-link">Youtube</a>
+						</li>
+					</ul>
+					<div class="hero-contents"> 
+					<p class="hero-text">A hair salon for men in Kyiv</p>
+					<h1 class="hero-title">BarberShop</h1>
+					<p class="hero-content">We are experts in trendy men's haircuts. We work quickly, carefully and tastefully</p>
+					</div>
+				</div>
 			</section>
 			<section class="about">
-				<ul>
-					<li>
-						<img src="./images/img-1.jpg" alt="" width="270" height="430" />
-					</li>
-					<li>
-						<img src="./images/img-2.jpg" alt="" width="270" height="430" />
-					</li>
-				</ul>
-				<p>About us</p>
-				<h2>Best BarberShop of your town</h2>
-				<p>If you want to add more confidence to your image, you are definitely in the right place.</p>
-				<p>
-					We are a team that never rests on our laurels and longing for change. And when you fall into the hands of our
-					master, then you can never be the same again. We are a team that is always on the same wavelength with
-					clients. Therefore, we are always ready to improve everyone who comes to us!
-				</p>
-				<button type="button">register online</button>
+				<div class="container">
+					<ul class="about-list">
+						<li class="about-item">
+							<img src="./images/img-1.jpg" alt="" width="270" height="430" class="about-images" />
+						</li>
+						<li>
+							<img src="./images/img-2.jpg" alt="" width="270" height="430" class="about-images" />
+						</li>
+					</ul>
+					<div class="about-text-wrap">
+					<p class="about-top-text">About us</p>
+					<h2 class="about-title">Best BarberShop of your town</h2>
+					<p class="about-bot-text">
+						If you want to add more confidence to your image, you are definitely in the right place.
+					</p>
+					<p class="about-content">
+						We are a team that never rests on our laurels and longing for change. And when you fall into the hands of
+						our master, then you can never be the same again. We are a team that is always on the same wavelength with
+						clients. Therefore, we are always ready to improve everyone who comes to us!
+					</p>
+					<button type="button" class="about-reg-button">register online</button>
+					</div>
+				</div>
 			</section>
-			<section>
-				<p>Spend time in the company of the best craftsmen</p>
-				<h2>Services and prices</h2>
-				<ul>
-					<li>
-						<p>Men's haircut</p>
-						<p>from 10 $</p>
-					</li>
-					<li>
-						<p>Bart trimmen</p>
-						<p>from 20 $</p>
-					</li>
-					<li>
-						<p>Mustache haircut</p>
-						<p>from 30 $</p>
-					</li>
-					<li>
-						<p>Shaving with straight razor</p>
-						<p>from 250 $</p>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<p>Intern's haircut</p>
-						<p>from 50 $</p>
-					</li>
-					<li>
-						<p>Haircut under the nozzle</p>
-						<p>from 50 $</p>
-					</li>
-					<li>
-						<p>Haircut under the nozzlet</p>
-						<p>from 30 $</p>
-					</li>
-					<li>
-						<p>Gray hair camouflage</p>
-						<p>from 250 $</p>
-					</li>
-				</ul>
+			<section class="prices">
+				<div class="container">
+					<p class="prices-text">Spend time in the company of the best craftsmen</p>
+					<h2 class="prices-title">Services and prices</h2>
+					<div class="prices-list-wrap">
+					<ul class="prices-list">
+						<li class="prices-item">
+							<p class="prices-item-text">Men's haircut</p>
+							<p class="prices-content">from 10 $</p>
+						</li>
+						<li class="prices-item">
+							<p class="prices-item-text">Bart trimmen</p>
+							<p class="prices-content">from 20 $</p>
+						</li>
+						<li class="prices-item">
+							<p class="prices-item-text">Mustache haircut</p>
+							<p class="prices-content">from 30 $</p>
+						</li>
+						<li class="prices-item">
+							<p class="prices-item-text">Shaving with straight razor</p>
+							<p class="prices-content">from 250 $</p>
+						</li>
+					</ul>
+					<ul class="prices-list">
+						<li class="prices-item">
+							<p class="prices-item-text">Intern's haircut</p>
+							<p class="prices-content">from 50 $</p>
+						</li>
+						<li class="prices-item">
+							<p class="prices-item-text">Haircut under the nozzle</p>
+							<p class="prices-content">from 50 $</p>
+						</li>
+						<li class="prices-item">
+							<p class="prices-item-text">Haircut under the nozzlet</p>
+							<p class="prices-content">from 30 $</p>
+						</li>
+						<li class="prices-item">
+							<p class="prices-item-text">Gray hair camouflage</p>
+							<p class="prices-content">from 250 $</p>
+						</li>
+					</ul>
+					</div>
+					<button type="button" class="prices-reg-but">Register online</button>
+				</div>
 			</section>
-			<section>
-				<ul>
-					<li>
-						<span>600</span>
-						<p>Satisfied customers per day</p>
-					</li>
-					<li>
-						<span>50</span>
-						<p>Excellent Service Awards</p>
-					</li>
-					<li>
-						<span>20</span>
-						<p>The best masters of Kyiv</p>
-					</li>
-					<li>
-						<span>100</span>
-						<p>Gifts for regular customers</p>
-					</li>
-				</ul>
-				<p>old traditional school</p>
-				<h2>Why do they come to us?</h2>
-				<p>Only good things are said about us. But better 1 time to see and feel than 10 times to read.</p>
+			<section class="reasons">
+				<div class="container">
+					<ul class="reasons-list">
+						<li class="reasons-item">
+							<span class="reasons-text">600</span>
+							<p class="reasons-content">Satisfied customers per day</p>
+						</li>
+						<li class="reasons-item">
+							<span class="reasons-text">50</span>
+							<p class="reasons-content">Excellent Service Awards</p>
+						</li>
+						<li class="reasons-item">
+							<span class="reasons-text">20</span>
+							<p class="reasons-content">The best masters of Kyiv</p>
+						</li>
+						<li class="reasons-item">
+							<span class="reasons-text">100</span>
+							<p class="reasons-content">Gifts for regular customers</p>
+						</li>
+					</ul>
+					<div class="reasons-text-wrap">
+					<p class="reasons-top-text">old traditional school</p>
+					<h2 class="reasons-title">Why do they come to us?</h2>
+					<p class="reasons-bot-text">
+						Only good things are said about us. But better 1 time to see and feel than 10 times to read.
+					</p>
+					</div>
+				</div>
 			</section>
-			<section>
-				<p>for true connoisseurs of the atmosphere</p>
-				<h2>Our masters</h2>
-				<ul>
-					<li>
-						<img src="./images/img-masters-1-min.jpg" alt="" width="370" height="346" />
-						<h3>John Smith</h3>
-						<p>Extreme Barber</p>
-					</li>
-					<li>
-						<img src="./images/img-masters-2-min.jpg" alt="" width="370" height="346" />
-						<h3>Michele Doe</h3>
-						<p>Extreme Barber</p>
-					</li>
-					<li>
-						<img src="./images/img-masters-3-min.jpg" alt="" width="370" height="346" />
-						<h3>Alan Black</h3>
-						<p>Extreme Barber</p>
-					</li>
-				</ul>
+			<section class="masters">
+				<div class="container">
+					<p class="masters-text">for true connoisseurs of the atmosphere</p>
+					<h2 class="masters-title">Our masters</h2>
+					<ul class="masters-list">
+						<li class="masters-item">
+							<img src="./images/img-masters-1-min.jpg" alt="" width="370" height="346" />
+							<h3 class="masters-item-title">John Smith</h3>
+							<p class="masters-item-text">Extreme Barber</p>
+						</li>
+						<li class="masters-item">
+							<img src="./images/img-masters-2-min.jpg" alt="" width="370" height="346" />
+							<h3 class="masters-item-title">Michele Doe</h3>
+							<p class="masters-item-text">Extreme Barber</p>
+						</li>
+							<p class="masters-item-text">Extreme Barber</p>
+						</li>
+					</ul>
+				</div>
 			</section>
-			<section>
-				<p>In Latin, "barba" means "beard"</p>
-				<h2 hidden>Gallary</h2>
-				<ul>
-					<li>
+			<section class="gallery">
+				<div class="container">
+				<p class="gallery-text">In Latin, "barba" means "beard"</p>
+				<h2 class="visually-hidden">Gallary</h2>
+				<ul class="gallery-list">
+					<li class="galery-item">
 						<img src="./images/rectangle-25-min.jpg" alt="" width="270" height="360" />
 					</li>
-					<li>
+					<li class="galery-item">
 						<img src="./images/rectangle-26-min.jpg" alt="" width="270" height="360" />
 					</li>
-					<li>
+					<li class="galery-item">
 						<img src="./images/rectangle-27-min.jpg" alt="" width="270" height="360" />
 					</li>
-					<li>
+					<li class="galery-item">
 						<img src="./images/rectangle-28-min.jpg" alt="" width="270" height="360" />
 					</li>
 				</ul>
+				</div>
 			</section>
-			<section>
-				<h2>Register online</h2>
-			</section>
-			<section>
-				<h2>Contacts</h2>
-				<address>
-					<ul>
-						<li>
-							<a href="https://goo.gl/maps/UtqmG3qifv9DGa2BA" target="_blank" rel="noopener nofollow noindex">
+			<section class="information">
+				<div class="container">
+					<div class="registration">
+				<h2 class="registr-title">Register online</h2>
+				<button type="button" class="reg-but">register online</button>
+				</div>
+			<div class="contacts">
+				<h2 class="contacts-title">Contacts</h2>
+				<address class="contacts-address">
+					<ul class="contacts-list">
+						<li class="contacts-item">
+							<a
+								href="https://goo.gl/maps/UtqmG3qifv9DGa2BA"
+								target="_blank"
+								rel="noopener nofollow noindex"
+								class="contacts-link"
+							>
 								Bohdana Khmel'nyts'koho St, 42, Kyiv, Kyivs'ka oblast, Ukraine, 02000
 							</a>
 							<iframe
@@ -183,27 +224,37 @@
 								referrerpolicy="no-referrer-when-downgrade"
 							></iframe>
 						</li>
-						<li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-						<li>
-							<a href="mailto:barbershop@email.com"></a>
-							barbershop@email.com
+						<li class="contacts-item"><a href="tel:+380441111111" class="contacts-link">+38 044 111 11 11</a></li>
+						<li class="contacts-item">
+							<a href="mailto:barbershop@email.com" class="contacts-link">barbershop@email.com</a>
 						</li>
 					</ul>
 				</address>
-				<p>working hours</p>
-				<p>Daily from 9:00 to 22:00</p>
+				<div class="contacts-wrap">
+				<p class="contacts-text">working hours</p>
+				<p class="contacts-content">Daily from 9:00 to 22:00</p>
+				</div>
+				</div>
+				</div>
 			</section>
 		</main>
-		<footer>
-			<p>&#169; Copyright 2023</p>
-			<ul>
-				<li>
-					<a href="" target="_blank" rel="noopener nofollow noreferrer">Instagram</a>
+		
+		<footer class="footer">
+			<div class="container">
+			<p class="footer-text">&#169; Copyright 2023</p>
+			<ul class="footer-list">
+				<li class="footer-item">
+					<a href="https://www.instagram.com/" target="_blank" rel="noopener nofollow noreferrer" class="footer-link">
+						Instagram
+					</a>
 				</li>
-				<li>
-					<a href="" target="_blank" rel="noopener nofollow noreferrer">Youtube</a>
+				<li class="footer-item">
+					<a href="https://www.youtube.com/" target="_blank" rel="noopener nofollow noreferrer" class="footer-link">
+						Youtube
+					</a>
 				</li>
 			</ul>
+			</div>
 		</footer>
 	</body>
 </html>
