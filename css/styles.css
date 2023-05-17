@@ -155,6 +155,14 @@ img {
 	padding: 272px 0 206px 96px;
 	flex-grow: 1;
 }
+.hero-text::before {
+	content: "";
+	width: 63px;
+	height: 1px;
+	background-color: currentColor;
+	margin-right: var(--typical-margin);
+}
+
 .hero-text {
 	font-weight: 600;
 	font-size: 11px;
@@ -163,6 +171,8 @@ img {
 	text-transform: uppercase;
 	color: rgba(157, 164, 189, 0.6);
 	margin-bottom: var(--typical-margin);
+	display: flex;
+	align-items: center;
 }
 
 .hero-title {
@@ -211,8 +221,16 @@ img {
 	text-transform: uppercase;
 	color: var(--second-title-color);
 	margin-bottom: 19px;
+	display: flex;
+	align-items: center;
 }
-
+.about-top-text::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: currentColor;
+	margin-right: var(--typical-margin);
+}
 .about-title {
 	font-family: "Raleway";
 	font-weight: 700;
@@ -274,6 +292,15 @@ img {
 	text-transform: uppercase;
 	color: rgba(157, 164, 189, 0.6);
 	margin-bottom: var(--typical-margin);
+	display: flex;
+	align-items: center;
+}
+.prices-text::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: currentColor;
+	margin-right: var(--typical-margin);
 }
 
 .prices-title {
@@ -294,11 +321,30 @@ img {
 	padding: 30px 40px;
 	flex-grow: 1;
 }
+.prices-light {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.prices-dark {
+	background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
 .prices-item {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
 }
+.prices-item::after {
+	content: "";
+	flex-grow: 1;
+	height: 1px;
+	background-color: #9da4bd;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
 .prices-item:not(:last-child) {
 	margin-bottom: var(--typical-margin);
 }
@@ -319,6 +365,7 @@ img {
 	text-align: right;
 	letter-spacing: 0.02em;
 	color: #9da4bd;
+	order: 1;
 }
 .prices-reg-but {
 	font-family: "Open Sans";
@@ -350,10 +397,13 @@ img {
 }
 .reasons-item {
 	width: 170px;
-	height: 130px;
-	border: 1px solid #000000;
+	height: 133px;
 	padding: 20px 24px;
 	text-align: center;
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .reasons-text {
@@ -372,6 +422,7 @@ img {
 	line-height: 1.36;
 	text-align: center;
 	color: var(--second-title-color);
+	max-width: 122px;
 }
 
 .reasons-top-text {
@@ -382,6 +433,15 @@ img {
 	text-transform: uppercase;
 	color: var(--second-title-color);
 	margin-bottom: var(--typical-margin);
+	display: flex;
+	align-items: center;
+}
+.reasons-top-text::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: currentColor;
+	margin-right: var(--typical-margin);
 }
 
 .reasons-title {
@@ -416,8 +476,16 @@ img {
 	text-transform: uppercase;
 	color: var(--second-title-color);
 	margin-bottom: var(--typical-margin);
+	display: flex;
+	align-items: center;
 }
-
+.masters-text::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: currentColor;
+	margin-right: var(--typical-margin);
+}
 .masters-title {
 	font-family: "Raleway";
 	font-style: normal;
@@ -495,6 +563,15 @@ img {
 	text-transform: uppercase;
 	color: var(--second-title-color);
 	margin-bottom: 44px;
+	display: flex;
+	align-items: center;
+}
+.gallery-text::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: currentColor;
+	margin-right: var(--typical-margin);
 }
 .gallery-list {
 	display: flex;
@@ -517,8 +594,9 @@ img {
 	padding-top: 130px;
 	padding-bottom: 193px;
 	padding-left: 56px;
-	width: 50%;
+	flex-grow: 1;
 }
+
 .registr-title {
 	font-family: "Raleway";
 	font-style: normal;
@@ -549,6 +627,7 @@ img {
 	padding-left: 99px;
 	display: flex;
 	flex-direction: column;
+	width: calc(50% - 15px);
 }
 
 .contacts-title {
@@ -583,6 +662,15 @@ img {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: var(--first-title-color);
+	display: flex;
+	align-items: center;
+}
+.contacts-text::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: #9da4bd;
+	margin-right: var(--typical-margin);
 }
 .contacts-content {
 	font-size: 18px;
@@ -612,6 +700,18 @@ img {
 	margin-left: auto;
 }
 .footer-item:not(:last-child) {
+	margin-right: 40px;
+}
+.footer-item:first-child {
+	display: flex;
+	align-items: center;
+}
+
+.footer-item:first-child::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	background-color: #9da4bd;
 	margin-right: 40px;
 }
 .footer-link {
