@@ -41,14 +41,16 @@
 		<main>
 			<section class="hero">
 				<div class="container">
-					<ul class="hero-list">
-						<li class="hero-item">
-							<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero-link">Instagram</a>
-						</li>
-						<li class="hero-item">
-							<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero-link">Youtube</a>
-						</li>
-					</ul>
+					<div class="hero-soc">
+						<ul class="hero-list">
+							<li class="hero-item">
+								<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero-link">Instagram</a>
+							</li>
+							<li class="hero-item">
+								<a href="" target="_blank" rel="noopener noreferrer nofollow" class="hero-link">Youtube</a>
+							</li>
+						</ul>
+					</div>
 					<div class="hero-contents">
 						<p class="hero-text">A hair salon for men in Kyiv</p>
 						<h1 class="hero-title">BarberShop</h1>
@@ -294,34 +296,52 @@
 				<div class="container">
 					<div class="registration">
 						<h2 class="registr-title">Register online</h2>
-						<button type="button" class="reg-but">register online</button>
+						<form class="footer-form" autocomplete="off">
+							<div class="inputs-wrap">
+								<div class="online-field">
+									<input class="online-input" type="text" name="name" id="name" placeholder=" " required />
+									<lable for="name" class="lable">Name*</lable>
+								</div>
+								<div class="online-field">
+									<input class="online-input" type="tel" placeholder=" " required name="phone" id="phone" />
+									<lable for="phone" class="lable">Phone number*</lable>
+								</div>
+							</div>
+							<div class="online-text-field">
+								<textarea class="textarea" type="text" name="message" id="message" placeholder=" "></textarea>
+								<lable for="message" class="lable">Message</lable>
+							</div>
+							<button type="button" class="reg-but">register online</button>
+						</form>
 					</div>
 					<div class="contacts">
 						<h2 class="contacts-title">Contacts</h2>
 						<address class="contacts-address">
 							<ul class="contacts-list">
-								<li class="contacts-item">
+								<li class="contacts-item adress">
+									<!-- <svg class="contacts-icon" width="24" heigth="24">
+										<use href="/images/icons/symbol-defs.svg#icon-map-pin" />
+									</svg> -->
 									<a
 										href="https://goo.gl/maps/UtqmG3qifv9DGa2BA"
 										target="_blank"
 										rel="noopener nofollow noindex"
 										class="contacts-link"
 									>
-										Bohdana Khmel'nyts'koho St, 42, Kyiv, Kyivs'ka oblast, Ukraine, 02000
+										Bohdana Khmel'nyts'koho St, 42, Kyiv, Ukraine, 02000
 									</a>
-									<iframe
-										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.010078440679!2d31.451576987051176!3d50.06737289809198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d442e7710760e3%3A0x38134cc6adf2b123!2sBohdana%20Khmel&#39;nyts&#39;koho%20St%2C%2042%2C%20Pereiaslav%2C%20Kyivs&#39;ka%20oblast%2C%20Ukraine%2C%2008400!5e0!3m2!1sde!2suk!4v1683635734575!5m2!1sde!2suk"
-										width="100"
-										height="80"
-										style="border: 0"
-										allowfullscreen=""
-										loading="lazy"
-										referrerpolicy="no-referrer-when-downgrade"
-									></iframe>
 								</li>
-								<li class="contacts-item"><a href="tel:+380441111111" class="contacts-link">+38 044 111 11 11</a></li>
-								<li class="contacts-item">
-									<a href="mailto:barbershop@email.com" class="contacts-link">barbershop@email.com</a>
+								<li class="contacts-item tel">
+									<!-- <svg class="contacts-icon" width="24" heigth="24">
+										<use href="/images/icons/symbol-defs.svg#icon-phone" />
+									</svg> -->
+									<a href="tel:+380441111111" class="contacts-link">+38 044 111 11 11</a>
+								</li>
+								<li class="contacts-item mail">
+									<!-- <svg class="contacts-icon" width="24" heigth="24">
+										<use href="/images/icons/symbol-defs.svg#icon-map-pin" />
+									</svg> -->
+									<a href="mailto:barbershop@email.com" class="contacts-link">barbershop@gmail.com</a>
 								</li>
 							</ul>
 						</address>
